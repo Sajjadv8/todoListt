@@ -1,6 +1,15 @@
-<form [formGroup]="registerForm ">
+<form [formGroup]="registerForm " (ngSubmit)="register()">
     <div class="u-form-group">
-        <input formControlName="name" type="text" placeholder="Name">
+        <input formControlName="name" type="text" placeholder="Name"  minlength="3"/>
+        <!--<p *ngIf="registerForm.controls.name.errors?.required">
+            no
+        </p>
+        <p *ngIf="registerForm.controls.name.errors?.minLength.actuallenght">
+            oh
+        </p>
+        <p *ngIf="registerForm.controls.name.errors?.minLength.requiredlenght">
+            You must enter the required number of characters
+        </p>-->
     </div>
     <div class="u-form-group">
         <input formControlName="email" type="email" placeholder="Email" />
@@ -12,6 +21,6 @@
         <input formControlName="confirm" type="password" placeholder="Confirm Password" />
     </div>
     <div class="u-form-group">
-        <button>Sign Up</button>
+        <button [disabled]="registerForm.invalid" class="btn btn-primary">Sign Up</button>
     </div>
 </form>
