@@ -10,6 +10,7 @@ import { ListComponent } from './list/list.component';
 import { SloginComponent } from './slogin/slogin.component';
 import { LoginComponent } from './slogin/login/login.component';
 import { SignUpComponent } from './slogin/sign-up/sign-up.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +20,14 @@ import { SignUpComponent } from './slogin/sign-up/sign-up.component';
     ListComponent,
     SloginComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

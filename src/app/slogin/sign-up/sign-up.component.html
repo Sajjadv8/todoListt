@@ -1,12 +1,17 @@
-<div class="u-form-group">
-    <input type="email" placeholder="Email" />
-</div>
-<div class="u-form-group">
-    <input type="password" placeholder="Password" />
-</div>
-<div class="u-form-group">
-    <input type="password" placeholder="Confirm Password" />
-</div>
-<div class="u-form-group">
-    <button>Sign Up</button>
-</div>
+<form [formGroup]="registerForm ">
+    <div class="u-form-group">
+        <input formControlName="name" type="text" placeholder="Name">
+    </div>
+    <div class="u-form-group">
+        <input formControlName="email" type="email" placeholder="Email" />
+    </div>
+    <div class="u-form-group">
+        <input formControlName="password" type="password" placeholder="Password" />
+    </div>
+    <div class="u-form-group">
+        <input formControlName="confirm" type="password" placeholder="Confirm Password" />
+    </div>
+    <div class="u-form-group">
+        <button>Sign Up</button>
+    </div>
+</form>
