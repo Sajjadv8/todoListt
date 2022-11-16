@@ -14,9 +14,11 @@ registerForm = new FormGroup({
    password : new FormControl(''),
    confirm  : new FormControl('') 
 })
+
 register(){
   console.log("called");
   
 }
-  constructor() { }
+  constructor() {
+   }
 }
