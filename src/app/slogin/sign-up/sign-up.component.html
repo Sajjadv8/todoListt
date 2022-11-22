@@ -18,6 +18,9 @@
     </div>
     <div class="u-form-group">
         <input formControlName="email" type="email" placeholder="Email" />
+        <P *ngIf="registerForm.errors?.['email']">
+            you must enter valid email
+        </P>
     </div>
     <div class="u-form-group">
         <input formControlName="password" type="password" placeholder="Password" />
