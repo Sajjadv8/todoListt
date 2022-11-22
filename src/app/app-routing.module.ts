@@ -6,10 +6,10 @@ import { ListComponent } from './list/list.component';
 import { SloginComponent } from './slogin/slogin.component';
 
 const routes: Routes = [
-{ path: 'List', component: ListComponent },
-{ path: 'form', component: FormComponent },
-{path : 'sLogin' , component : SloginComponent},
-{ path: 'about', component: AboutComponent }
+  { path: 'List', component: ListComponent },
+  { path: 'form', component: FormComponent },
+  { path: 'sLogin', component: SloginComponent },
+  { path: 'about', component: AboutComponent }
 ];
 
 @NgModule({
